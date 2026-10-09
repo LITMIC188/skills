@@ -1,0 +1,14 @@
+{
+  "name": "Web-Design",
+  "description": "当且仅当用户本条输入经 Unicode NFKC、去除首尾空白、连续空白压缩及英文忽略大小写后，字面包含“设计网页”“设计网站”“设计工作台布局”“skills<Web-Design>”任一核心触发词，或字面包含“优化 React 页面性能”“优化 Next.js 页面性能”“测试 webapp”任一扩展触发词且所有扩展触发短语之外另有“网页”“网站”“工作台布局”“React”“Next.js”“webapp”任一领域词时使用；显式调用 skills<Web-Design> 直接触发，单独扩展短语不触发；用于网页/网站/工作台布局设计、React/Next.js 页面性能优化与 webapp 测试。",
+  "triggers": [
+    "设计网页",
+    "设计网站",
+    "设计工作台布局",
+    "skills<Web-Design>",
+    "优化 React 页面性能",
+    "优化 Next.js 页面性能",
+    "测试 webapp"
+  ],
+  "match_description": "匹配必须先对输入和词表执行 Unicode NFKC、首尾去空白、连续空白压缩为单个空格；英文忽略大小写，中文按完全一致的连续字面匹配。包含 skills<Web-Design> 时优先直接匹配；否则包含设计网页、设计网站、设计工作台布局任一核心短语时直接匹配；否则须包含优化 React 页面性能、优化 Next.js 页面性能、测试 webapp 任一扩展短语，且遮蔽输入中所有扩展短语后的上下文另有网页、网站、工作台布局、React、Next.js、webapp 任一领域词才匹配。英文领域词须有非 ASCII 字母数字下划线边界。其余输入不匹配，不作近义词或语义推断；空白压缩不删除内部空格。"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Web-Design"
+  short_description: "按确定性触发规则完成网页与工作台设计、React 性能优化和测试"
+  default_prompt: "请使用 $web-design；skills<Web-Design>，设计网页并完成性能优化与测试。"
+
+policy:
+  allow_implicit_invocation: true
